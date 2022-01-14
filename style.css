@@ -1,0 +1,558 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.8.1
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var,
+optgroup {
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+del,
+ins {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+sup {
+	vertical-align: baseline;
+}
+
+sub {
+	vertical-align: baseline;
+}
+
+legend {
+	color: #000;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+	*font-size: 100%;
+}
+
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.8.1
+*/
+body {
+	font: 13px/1.231 arial, helvetica, clean, sans-serif;
+	*font-size: small;
+	*font: x-small;
+}
+
+select,
+input,
+button,
+textarea,
+button {
+	font: 99% arial, helvetica, clean, sans-serif;
+}
+
+table {
+	font-size: inherit;
+	font: 100%;
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+	font-family: monospace;
+	*font-size: 108%;
+	line-height: 100%;
+}
+
+
+body {
+	background-image: url(images/bg_main.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #333;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#wrap {
+	width: 636px;
+	margin: 100px auto 0 5%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px -5px #777;
+	padding: 30px;
+}
+
+#head {
+	font-family: 'Caveat', cursive;
+	text-align: center;
+	font-size: 60px;
+}
+
+p {
+	line-height: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+
+.required {
+	color: #BB1850;
+	margin-left: 10px;
+}
+
+#foot {
+	width: 780px;
+	text-align: right;
+}
+
+th,
+td {
+	border: 1px solid #999;
+	padding: 3px;
+}
+
+th {
+	background-color: #106eb7;
+	color: #fff;
+	font-weight: bold;
+}
+
+li {
+	list-style: circle;
+	margin-left: 20px;
+	margin-bottom: 0.5em;
+}
+
+.paging {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.paging li {
+	display: inline;
+	list-style: none;
+}
+
+.error {
+	margin-top: 5px;
+	font-size: 90%;
+	color: #BB1850;
+}
+
+#lead {
+	margin-bottom: 1em;
+}
+
+.msg {
+	clear: both;
+	border-top: 1px solid #ccc;
+	padding: 10px 0;
+	margin-top: 30px;
+}
+
+.msg img {
+	float: left;
+	margin-right: 5px;
+}
+
+
+.msg .day,
+.msg .day a {
+	font-size: 80%;
+	color: #999;
+}
+
+.login-contents {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.login-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.login-title {
+	font-family: 'Caveat', cursive;
+	font-size: 28px;
+}
+
+.login-box {
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 22px;
+	font-family: 'Caveat', cursive;
+	width: 315px;
+}
+
+.login-link {
+	color: lightblue;
+	font-size: 20px;
+	font-family: 'Caveat', cursive;
+	text-decoration: none;
+}
+
+.login-link:hover {
+	border-bottom: 2px solid lightblue;
+}
+
+.login-bottom {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.login-button {
+	color: #fff;
+	font-size: 24px;
+	font-family: 'Caveat', cursive;
+	padding: 6px 0;
+	width: 200px;
+	border-radius: 25px;
+	background-color: lightblue;
+	border: 2px solid lightblue;
+	cursor: pointer;
+	transition: all .3s;
+
+}
+
+.login-button:hover {
+	color: lightblue;
+	background-color: #fff;
+	transition: all .3s;
+}
+
+.bbs-text {
+	font-size: 16px;
+}
+
+.bbs-logout {
+	color: lightblue;
+	font-size: 20px;
+	font-family: 'Caveat', cursive;
+	text-decoration: none;
+}
+
+.bbs-logout:hover {
+	border-bottom: 2px solid lightblue;
+}
+
+.bbs-contents {
+	margin-top: 30px;
+}
+
+.bbs-textarea {
+	margin-top: 10px;
+	width: 92%;
+	height: 100px;
+	resize: none;
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+.bbs-button-outer {
+	margin-top: 10px;
+	text-align: right;
+}
+
+.bbs-button {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Caveat', cursive;
+	padding: 6px 0;
+	width: 100px;
+	border-radius: 25px;
+	background-color: lightblue;
+	border: 2px solid lightblue;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.bbs-button:hover {
+	color: lightblue;
+	background-color: #fff;
+	transition: all .3s;
+}
+
+.day {
+	margin-top: 10px;
+}
+
+.view-link {
+	color: lightblue;
+	font-size: 20px;
+	font-family: 'Caveat', cursive;
+	text-decoration: none;
+}
+
+.view-link:hover {
+	border-bottom: 2px solid lightblue;
+}
+
+.join-contents {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.join-title {
+	font-family: 'Caveat', cursive;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+}
+
+.join-box {
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 16px;
+	font-family: 'Caveat', cursive;
+	width: 315px;
+}
+
+.join-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+
+.join-button {
+	color: #fff;
+	font-size: 24px;
+	font-family: 'Caveat', cursive;
+	padding: 6px 0;
+	width: 200px;
+	border-radius: 25px;
+	background-color: lightblue;
+	border: 2px solid lightblue;
+	cursor: pointer;
+	transition: all .3s;
+
+}
+
+.join-button:hover {
+	color: lightblue;
+	background-color: #fff;
+	transition: all .3s;
+}
+
+.join-button-outer {
+	display: flex;
+	justify-content: center;
+	margin: 30px auto 0;
+}
+
+.check-contents {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.check-title {
+	font-family: 'Caveat', cursive;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	width: 200px;
+}
+
+.check-box {
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 16px;
+	font-family: 'Caveat', cursive;
+	width: 315px;
+}
+
+.check-flex {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.check-flex02 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+
+.check-button {
+	color: #fff;
+	font-size: 24px;
+	font-family: 'Caveat', cursive;
+	padding: 6px 0;
+	width: 200px;
+	border-radius: 25px;
+	background-color: lightblue;
+	border: 2px solid lightblue;
+	cursor: pointer;
+	transition: all .3s;
+
+}
+
+.check-button:hover {
+	color: lightblue;
+	background-color: #fff;
+	transition: all .3s;
+}
+
+.check-button-outer {
+	display: flex;
+	justify-content: center;
+	margin: 30px auto 0;
+}
+
+.check-link {
+	color: lightblue;
+	font-size: 20px;
+	font-family: 'Caveat', cursive;
+	text-decoration: none;
+}
+
+.check-link:hover {
+	border-bottom: 2px solid lightblue;
+}
+
+.thanks-contents {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.thanks-title {
+	margin-top: 50px;
+	font-family: 'Caveat', cursive;
+	font-size: 18px;
+	text-align: center;
+}
+
+.thanks-button {
+	color: #fff;
+	font-size: 24px;
+	font-family: 'Caveat', cursive;
+	padding: 10px 0;
+	width: 200px;
+	border-radius: 25px;
+	background-color: lightblue;
+	border: 2px solid lightblue;
+	cursor: pointer;
+	transition: all .3s;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin: 50px auto 0;
+}
+
+.thanks-button:hover {
+	color: lightblue;
+	background-color: #fff;
+	transition: all .3s;
+}
+
+*:focus {
+	outline: none;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
